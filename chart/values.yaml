@@ -33,6 +33,8 @@ awsForFluentBit:
 awsLoadBalancerController:
   enable: false
   serviceAccountName:
+  image:
+    repository:
 
 # AWS Otel Collector Values
 awsOtelCollector:

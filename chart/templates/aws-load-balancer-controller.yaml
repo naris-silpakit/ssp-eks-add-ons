@@ -20,6 +20,8 @@ spec:
         value: {{ .Values.region }}
       - name: aws-load-balancer-controller.serviceAccount.name
         value: {{ .Values.awsLoadBalancerController.serviceAccountName }}
+      - name: aws-load-balancer-controller.image.repository
+        value: {{ .Values.awsLoadBalancerController.image.repository}}
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-system
