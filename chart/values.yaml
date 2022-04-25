@@ -99,7 +99,7 @@ prometheus:
   roleArn: 
   ampWorkspaceUrl:
 
-# Metrics Server Values
+# Spark Operator Values
 sparkOperator:
   enable: false
 
@@ -130,5 +130,10 @@ kubeStateMetrics:
 
 # Kubernetes Dashboard Values
 kubernetesDashboard:
+  enable: false
+  serviceAccountName:
+
+# Kubernetes Secrets Store CSI Driver
+secretsStoreCsiDriver:
   enable: false
   serviceAccountName:
